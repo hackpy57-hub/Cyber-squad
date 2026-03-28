@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC-ROOTS: Contact Us</title>
+    <style>
+        /* Base Styles from Home Page */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #1a1a1a; color: #e0e0e0; min-height: 100vh; display: flex; flex-direction: column; }
+        .container { width: 85%; margin: 0 auto; max-width: 1200px; padding: 0 15px; }
+        .container::after { content: ""; display: table; clear: both; }
+        
+        header { background-color: #000; color: #fff; padding: 20px 0; border-bottom: 2px solid #ff9900; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        header h1 { float: left; margin: 0; font-size: 24px; color: #ff9900; }
+        header nav { float: right; }
+        header nav ul { list-style: none; margin: 0; padding: 0; }
+        header nav ul li { display: inline; margin-left: 20px; }
+        header nav ul li a { color: #fff; text-decoration: none; font-weight: bold; transition: color 0.3s; }
+        header nav ul li a:hover { color: #ff9900; }
+
+        /* Contact Page Specific Styles */
+        .contact-section { padding: 150px 0 80px 0; flex: 1; }
+        .contact-header { text-align: center; margin-bottom: 50px; }
+        .contact-header h2 { font-size: 2.5em; color: #ff9900; text-transform: uppercase; margin-bottom: 10px; }
+        .contact-header p { color: #888; }
+
+        .contact-wrapper { display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; }
+        
+        /* Contact Info Cards */
+        .contact-info { flex: 1; min-width: 300px; }
+        .info-box { background: #111; padding: 25px; border-left: 4px solid #ff9900; margin-bottom: 20px; border-radius: 4px; }
+        .info-box h4 { color: #ff9900; margin-top: 0; text-transform: uppercase; }
+        .info-box p { margin-bottom: 0; line-height: 1.6; }
+
+        /* Contact Form */
+        .contact-form { flex: 1.5; min-width: 300px; background: #222; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: bold; color: #ff9900; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px; background: #333; border: 1px solid #444; color: #fff; border-radius: 4px; outline: none; box-sizing: border-box; }
+        .form-group input:focus, .form-group textarea:focus { border-color: #ff9900; }
+        
+        .submit-btn { background-color: #ff9900; color: #000; padding: 15px 40px; border: none; font-weight: bold; border-radius: 5px; text-transform: uppercase; cursor: pointer; transition: 0.3s; width: 100%; }
+        .submit-btn:hover { background-color: #e68a00; transform: translateY(-2px); }
+
+        footer { background-color: #000; color: #888; padding: 20px 0; text-align: center; }
+
+        @media (max-width: 768px) {
+            header h1 { float: none; text-align: center; margin-bottom: 10px; }
+            header nav { float: none; text-align: center; }
+            header nav ul li { margin: 0 10px; }
+            .contact-wrapper { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SEC-ROOTS</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions about a course or need technical help? Send us a message.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h4>Our Location</h4>
+                        <p>Cyber Space, Digital Street<br>Root City, Web 3.0</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Email Us</h4>
+                        <p>support@secroots.com<br>info@secroots.com</p>
+                    </div>
+                    <div class="info-box">
+                        <h4>Working Hours</h4>
+                        <p>Monday - Friday: 10:00 AM - 06:00 PM<br>Saturday: 10:00 AM - 02:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="What is this about?">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SEC-ROOTS. All rights reserved. Your gateway to ethical hacking.</p>
+        </div>
+    </footer>
+</body>
+</html>
